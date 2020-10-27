@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Date;
+
 
 /**
  * @Auther: wwt
@@ -21,5 +23,11 @@ public class HelloController {
                 "配置了花生壳内网穿透" +
                 "修复webhook添加错误";
     }
-
+    @RequestMapping("/hi")
+    @ResponseBody
+    public String hi() {
+        return "Hi jenkins，" + new Date().toString()+
+                "配置了花生壳内网穿透" +
+                "修复webhook添加错误";
+    }
 }
