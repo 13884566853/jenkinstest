@@ -18,7 +18,8 @@ public class HelloController {
     @ResponseBody
     public String hello() {
         return "你好 jenkins，2020-10-26 22:28:52" +
-                "配置了花生壳内网穿透";
+                "配置了花生壳内网穿透" +
+                "修复webhook添加错误";
     }
 
 }
