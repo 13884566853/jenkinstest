@@ -17,7 +17,8 @@ public class HelloController {
     @RequestMapping("/hello")
     @ResponseBody
     public String hello() {
-        return "你好 jenkins，2020-10-26 22:28:52";
+        return "你好 jenkins，2020-10-26 22:28:52" +
+                "配置了花生壳内网穿透";
     }
 
 }
